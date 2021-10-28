@@ -12,8 +12,6 @@ public class ResultadoLoteria {
             String[] loterias = {"megasena", "quina", "diadesorte", "lotofacil"};
             String element = "[id=ulDezenas]";
 
-             
-
             final BrowserType chromium = playwright.chromium();
             final Browser browser = chromium.launch();
             final Page page = browser.newPage();
