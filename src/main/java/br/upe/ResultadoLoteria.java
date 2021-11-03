@@ -38,7 +38,7 @@ public class ResultadoLoteria {
         }
     }
 
-    private static void pairsNumbers(String numbers, String loteria){
+    public static ArrayList<String> pairsNumbers(String numbers, String loteria){
 
         final ArrayList<String> numbersArr = new ArrayList<>();
 
@@ -50,6 +50,8 @@ public class ResultadoLoteria {
         for(String dezenas: numbersArr){
             System.out.print( dezenas + " ");
         }
+
+        return numbersArr;
         
     }
     
