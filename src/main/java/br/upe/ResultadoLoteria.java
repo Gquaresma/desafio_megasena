@@ -3,13 +3,12 @@ package br.upe;
 import java.util.ArrayList;
 import com.microsoft.playwright.*;
 
-
 public class ResultadoLoteria {
     public static void obtemUltimoResultado(){
 
         try (Playwright playwright = Playwright.create()){
             
-            String[] loterias = {"megasena", "quina", "diadesorte", "lotofacil", "lotomania"};
+            String[] loterias = {"quina", "megasena", "diadesorte", "lotofacil", "lotomania"};
             String element = "[id=ulDezenas]";
 
             final BrowserType chromium = playwright.chromium();
