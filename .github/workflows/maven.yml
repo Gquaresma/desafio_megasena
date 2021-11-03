@@ -5,9 +5,9 @@ name: build desafio_megasena
 
 on:
   push:
-    branches: [ main, dev ]
+    branches: [ main, dev, test ]
   pull_request:
-    branches: [ main, dev ]
+    branches: [ main, dev, test ]
 
 jobs:
   build:

@@ -1,22 +1,20 @@
-// package br.upe;
+package br.upe;
+import java.util.ArrayList;
 
-// import static org.junit.Assert.assertNotNull;
-// import static org.junit.Assert.assertTrue;
+import org.junit.Test;
+import junit.framework.TestCase;
 
-// import org.junit.Test;
-// import junit.framework.TestCase;
+public class ResultadoLoteriaTest extends TestCase {
+/** Número  resultado da mega-sena. */
+    private final static String numeroSorteados = "020923354358";
+    /**
+    * Teste do método pairsNumberso()
+    */
+    @Test
+    public void testpairsNumbers() {
+        final ArrayList<String> ultimoResultado = ResultadoLoteria.pairsNumbers(numeroSorteados, "megasena");
 
-// public class ResultadoLoteriaTest extends TestCase {
-// /** Número de dezenas esperadas no resultado da mega-sena. */
-//     private final static int NUMERO_DE_DEZENAS = 6;
-//     /**
-//     * Teste do método obtemUltimoResultado()
-//     */
-//     @Test
-//     public void testObtemUltimoResultado() {
-//         String[] ultimoResultado = ResultadoLoteria.obtemUltimoResultado();
-
-//         assertNotNull(ultimoResultado);
-//         assertTrue( ultimoResultado.length == NUMERO_DE_DEZENAS );
-//     }
-// }
+        assertNotNull(ultimoResultado);
+        assertTrue( ultimoResultado.size() == (numeroSorteados.length()) / 2 );
+    }
+}
